@@ -2,53 +2,58 @@ from datetime import date
 
 #outdoor corral (walking)
 class Donkey: 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
       self.name = name
       self.species = species
       self.date_added = date.today()
       self.walking = True
+      self.shift = shift
       
     def __str__(self):
-      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks.\n"
+      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
 class Sheep: 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
       self.name = name
       self.species = species
       self.date_added = date.today()
       self.walking = True
+      self.shift = shift
       
     def __str__(self):
-      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks.\n"
+      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
 
 class Goat: 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
       self.name = name
       self.species = species
       self.date_added = date.today()
       self.walking = True
+      self.shift = shift
       
     def __str__(self):
-      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks.\n"
+      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
 
 class Cow: 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
       self.name = name
       self.species = species
       self.date_added = date.today()
       self.walking = True
+      self.shift = shift
       
     def __str__(self):
-      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks.\n"
+      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
 
 class Horse: 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
       self.name = name
       self.species = species
       self.date_added = date.today()
       self.walking = True
-      
+      self.shift = shift
+
     def __str__(self):
-      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks.\n"
+      return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
 
 #glass tank(slithering)
 class Watersnake: 
@@ -154,11 +159,11 @@ class KoiFish:
       return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.swimming)} that it swims.\n"
 
 
-JA = Donkey("JA", "donkey",)
-Black = Sheep("Black", "sheep",)
-Billy = Goat("Billy", "goat",)
-Milkshake = Cow("Milkshake", "Cow",)
-RedRum = Horse("RedRum", "horse",)
+JA = Donkey("JA", "donkey", "morning")
+Black = Sheep("Black", "sheep", "afternoon")
+Billy = Goat("Billy", "goat", "midday")
+Milkshake = Cow("Milkshake", "Cow", "morning")
+RedRum = Horse("RedRum", "horse", "midday")
 
 Noodles = Watersnake("Noodles", "watersnake")
 Zoe = Rattlesnake("Zoe", "rattlesnake")
