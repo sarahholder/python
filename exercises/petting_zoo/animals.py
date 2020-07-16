@@ -23,6 +23,9 @@ class Sheep:
       self.walking = True
       self.shift = shift
       self.food = food
+
+    def feed(self):
+      print(f'{self.name} was fed on {date.today().strftime("%m/%d/%Y")}')
       
     def __str__(self):
       return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
@@ -36,6 +39,9 @@ class Goat:
       self.shift = shift
       self.food = food
       
+    def feed(self):
+      print(f'{self.name} was fed on {date.today().strftime("%m/%d/%Y")}')
+
     def __str__(self):
       return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
 
@@ -48,6 +54,9 @@ class Cow:
       self.shift = shift
       self.food = food
       
+    def feed(self):
+      print(f'{self.name} was fed on {date.today().strftime("%m/%d/%Y")}')
+
     def __str__(self):
       return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
 
@@ -59,6 +68,9 @@ class Horse:
       self.walking = True
       self.shift = shift
       self.food = food
+
+    def feed(self):
+      print(f'{self.name} was fed on {date.today().strftime("%m/%d/%Y")}')
 
     def __str__(self):
       return f"This animal is named {self.name}, it is a {self.species} and it was added on {self.date_added} and it is {bool(self.walking)} that it walks and it is available to pet during the {self.shift} shift.\n"
